@@ -1,11 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
-
 /**
 * main - positive, negative or zero num
-* Return 0 (Success)
+* Return: 0 (Success)
 */
 int main(void)
 {
