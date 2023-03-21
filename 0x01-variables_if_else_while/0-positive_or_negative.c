@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <time.h>
 /**
 * main - positive, negative or zero num
 * Return: Always 0 (Success)
