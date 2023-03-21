@@ -8,7 +8,7 @@ int main(void)
 	int n;
 
 	srand(time(0));
-	n = rand()
+	n = rand();
 		
 	if ((n % 10) > 5)
 	{
