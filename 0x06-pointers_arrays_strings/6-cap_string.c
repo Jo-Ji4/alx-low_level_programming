@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * cap_string - making all words of a string CAPITAL.
+ * cap_string - making all words of a string capital.
  * @s: string to use.
  *
  * Return: string.
