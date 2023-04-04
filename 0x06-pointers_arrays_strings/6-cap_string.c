@@ -23,7 +23,7 @@ char *cap_string(char *s)
 			check = 0;
 			while (check == 0 && y < 13)
 			{
-				if (s[x - 1] == s[y])
+				if (s[x - 1] == a[y])
 				{
 					check = 1;
 				}
