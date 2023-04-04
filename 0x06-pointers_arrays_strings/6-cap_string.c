@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * cap_string - making all words of a string capital.
+ * cap_string - capitalizes all words of a string.
  * @s: string to use.
  *
  * Return: string.
@@ -9,32 +9,32 @@
 
 char *cap_string(char *s)
 {
-	int x = 1, y, check;
+	int i = 1, j, check;
 	char a[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\n', '\t', ' '};
 
 	if (s[0] > 96 && s[0] < 123)
 		s[0] -= 32;
 
-	while (s[x] != '\0')
+	while (s[i] != '\0')
 	{
-		if (s[x] > 96 && s[x] < 123)
+		if (s[i] > 96 && s[i] < 123)
 		{
-			y = 0;
+			j = 0;
 			check = 0;
-			while (check == 0 && y < 13)
+			while (check == 0 && j < 13)
 			{
-				if (s[x - 1] == a[y])
+				if (s[i - 1] == a[j])
 				{
 					check = 1;
 				}
-				y++;
+				j++;
 			}
 			if (check == 1)
 			{
-				s[x] -= 32;
+				s[i] -= 32;
 			}
 		}
-		x++;
+		i++;
 	}
 	return (s);
 }
